@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Animal } from '../animal';
 
 @Component({
   selector: 'app-animal-list',
@@ -11,32 +12,21 @@ export class AnimalListComponent implements OnInit {
 
   constructor() { 
    
-    this.animals = [     
-      {
-     ime: 'Badi',
-     vrsta:  'pas',
-     datum_rodjenja:'4.05.2005.'
-   },
-   {
-    ime: 'Sarac',
-    vrsta:  'konj',
-    datum_rodjenja:'14.09.2015.'
-   },
-   {
-    ime: 'Mili',
-    vrsta:  'macka',
-    datum_rodjenja:'3.12.2016.'
-   },
-   {
-    ime: 'Cile',
-     vrsta:  'hrcak',
-     datum_rodjenja:'25.10.2017.'
-   },
-   {
-    ime: 'Poli',
-    vrsta:  'papagaj',
-    // datum_rodjenja:'13.01.2014.'
-   }
+    this.animals = [ 
+     
+        new Animal('Badi','pas','4.05.2005.'),
+      
+         new Animal('Sarac','konj','14.09.2015.'),
+        
+      
+        new Animal('Mili','macka','3.12.2016.'),
+        
+      
+        new Animal('Cile','hrcak','25.10.2017.'),
+      
+     
+        new Animal('Poli','papagaj',''),
+      
  ];
  }
  removeAnimal(animal){
