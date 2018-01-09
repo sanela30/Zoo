@@ -29,12 +29,16 @@ export class AnimalListComponent implements OnInit {
       
  ];
  }
- removeAnimal(animal){
+  removeAnimal(animal){
   let index = this.animals.indexOf(animal);
   this.animals.splice(index,1);
  
 }
-
+  moveToTop(animal){
+    this.removeAnimal(animal);
+    this.animals.unshift(animal);
+ 
+}
   ngOnInit() {
   }
 
