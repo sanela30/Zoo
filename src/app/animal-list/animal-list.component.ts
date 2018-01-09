@@ -34,8 +34,8 @@ export class AnimalListComponent implements OnInit {
    },
    {
     ime: 'Poli',
-     vrsta:  'papagaj',
-     datum_rodjenja:'13.02.2014.'
+    vrsta:  'papagaj',
+    // datum_rodjenja:'13.01.2014.'
    }
  ];
  }
