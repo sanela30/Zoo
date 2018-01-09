@@ -1,3 +1,18 @@
+<h1>Animal</h1>
+<br>
+<form>
+    <label for="vrsta">Vrsta:</label>
+    <input name="vrsta" type="text"[(ngModel)]="newAnimal.vrsta"/>
+
+    <label for="ime">ime:</label>
+    <input name="ime" type="text"[(ngModel)]="newAnimal.ime"/>
+
+    <label for="datum_rodjenja">Datum rodjenja:</label>
+    <input name="datum_rodjenja" type="text"[(ngModel)]="newAnimal.datum_rodjenja"/>
+
+    <button(click)="addAnimal()">Dodaj </button>
+</form>
+
 <table class="table table">
   <thead>
     <tr>
@@ -22,6 +37,5 @@
     Move to top
     </button>
 </td>
-
-  </tr>
+</tr>
 </table>
